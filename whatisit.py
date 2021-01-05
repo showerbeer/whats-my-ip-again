@@ -6,7 +6,7 @@ from os import getenv
 import logging
 
 # Configure logging
-logging.basicConfig(filename='whats-my-ip-again.log', encoding='utf-8', level=logging.DEBUG,
+logging.basicConfig(filename='whats-my-ip-again.log', level=logging.DEBUG,
                     format='%(levelname)s:%(asctime)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S')
 
 # Get credentials from .env
