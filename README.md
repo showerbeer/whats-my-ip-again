@@ -8,9 +8,10 @@ Requires python 3 with [pip](https://pypi.org/) installed.
 
 Steps:
 
-1. Install required libs with `python -m pip install -r requirements.txt`
-2. Create a file `.env` in the root directory of this project. Add credentials `GMAIL_USER` and `GMAIL_PASSWORD`. E.g. `GMAIL_USER=myemail@gmail.com`, same for password.
-3. Do a test run to make sure everything works: `python whatisit.py`
+1. Clone directory to your computer/box/pi/whatever
+2. Install required libs with `python -m pip install -r requirements.txt`
+3. Create a file `.env` in the root directory of this project. Add credentials `GMAIL_USER` and `GMAIL_PASSWORD`. E.g. `GMAIL_USER=myemail@gmail.com`, same for password.
+4. Do a test run to make sure everything works: `python whatisit.py`
     - if successful, the new file `current_ip` should contain your current IP address, an email should be sent, and there will be a log file created. Check the log
     - if it fails, check the created log file for errors
 
