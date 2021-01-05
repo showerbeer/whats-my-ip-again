@@ -1,5 +1,5 @@
 # Notify changes to IP address using email
-This basic app is designed to work with a task shceduler, e.g. `cron` in linux. It will check against the [public API for whatismyip.com](https://www.whatismyip.com/api/) and record the fetchd IP address in a file. If the fetched IP address is different from the stored IP address, it will save the new address and then send an email to the configured address containing the new IP address.
+This basic app is designed to work with a task shceduler, e.g. `cron` in linux. It will check against the [public API for whatismyipaddress.com](https://whatismyipaddress.com/api) and record the fetchd IP address in a file. If the fetched IP address is different from the stored IP address, it will save the new address and then send an email to the configured address containing the new IP address.
 
 The send-email-component of this app only works if you have a Gmail account that [allows Less Secure Apps](https://support.google.com/accounts/answer/6010255?hl=en).
 
@@ -18,11 +18,11 @@ Steps:
 ## To schedule regular runs
 If on linux, use `cron`. If you haven't used `cron` before you can learn about it [here](https://opensource.com/article/17/11/how-use-cron-linux).
 
-If you jus want to get it running every minute do the following.
+If you jus want to get it running every 5 minutes do the following:
 
 1. `crontab -e` to edit the `cron` jobs
 2. Select editor (nano is recommended for beginners)
-3. At the bottom of the file, add `* * * * * python3 ~/whats-my-ip-again/whatisit.py`
+3. At the bottom of the file, add `* /5 * * * python3 ~/whats-my-ip-again/whatisit.py`
     - specify filename/location as appropriate. The above assumes you cloned it into your user home directory
 4. Save the file (CTRL+S) and exit (CTRL+X)
 
